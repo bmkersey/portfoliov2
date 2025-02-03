@@ -47,7 +47,7 @@ export default function Home() {
         <Image src={avatar} alt="Brendan's Avatar" height={400} width={400} />
       </div>
       <div className="mt-36 ml-24 flex justify-around">
-        <div className="flex flex-col w-1/3" id="about">
+        <div className="flex flex-col w-1/2" id="about">
           <h2 className="text-4xl text-purple-500">About:</h2>
           <p className="">
             Hello! My name is Brendan and I am a full stack developer. I have 3
@@ -73,7 +73,7 @@ export default function Home() {
             Download Resume
           </a>
         </div>
-        <div className="flex w-1/3 flex-col" id="skills">
+        <div className="flex w-1/2 flex-col" id="skills">
           <h2 className="text-4xl text-purple-500">Skills:</h2>
           <ul className="list-disc">
             <li>HTML</li>
