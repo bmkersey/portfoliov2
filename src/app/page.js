@@ -4,6 +4,7 @@ import Navigation from "./components/nav";
 import Image from "next/image";
 import avatar from "../../public/bkAvatar.svg";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 export default function Home() {
   const projects = [
@@ -135,6 +136,7 @@ export default function Home() {
         <h2 className="text-purple-500 text-3xl md:text-4xl">Contact Me:</h2>
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 }
