@@ -67,6 +67,7 @@ export default function Home() {
           </p>
           <a
             className="border p-2 rounded-md ml-44 mt-4 w-fit bg-purple-500 hover:bg-purple-700"
+            download={"BrendanKerseyResume.pdf"}
             href="/portfoliov2/BrendanKerseyResume.pdf"
           >
             Download Resume
