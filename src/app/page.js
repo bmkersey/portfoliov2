@@ -36,49 +36,59 @@ export default function Home() {
   return (
     <div className="text-white">
       <Navigation />
-      <div id="home" className="flex flex-row justify-center space-x-72">
-        <div>
-          <h2 className="mt-48 text-purple-500 text-5xl">
+
+      {/* Hero Section */}
+      <div
+        id="home"
+        className="flex flex-col lg:flex-row items-center justify-center lg:space-x-32 p-8"
+      >
+        <div className="text-center lg:text-left">
+          <h2 className="mt-16 text-purple-500 text-4xl md:text-5xl">
             &lt;Brendan
-            <br /> Kersey/&gt;
+            <br />
+            Kersey/&gt;
           </h2>
-          <p className="text-center">Full Stack Developer.</p>
+          <p className="mt-2 text-lg">Full Stack Developer.</p>
         </div>
-        <Image src={avatar} alt="Brendan's Avatar" height={400} width={400} />
+        <Image
+          src={avatar}
+          alt="Brendan's Avatar"
+          height={300}
+          width={300}
+          className="mt-6 lg:mt-0"
+        />
       </div>
-      <div className="mt-36 ml-24 flex justify-around">
-        <div className="flex flex-col w-1/2" id="about">
-          <h2 className="text-4xl text-purple-500">About:</h2>
-          <p className="">
-            Hello! My name is Brendan and I am a full stack developer. I have 3
-            years expierience building scalable web applications. Recently
+
+      {/* About & Skills Section */}
+      <div className="mt-24 px-6 lg:px-24 flex flex-col lg:flex-row gap-y-8 lg:gap-x-12">
+        {/* About Section */}
+        <div className="lg:w-1/2" id="about">
+          <h2 className="text-3xl md:text-4xl text-purple-500">About:</h2>
+          <p className="mt-4 text-base md:text-lg">
+            Hello! My name is Brendan and I am a full stack developer with 3
+            years of experience building scalable web applications. Recently, I
             developed a company portal for a national organization, enabling
             users to generate sales reports, request administrative services,
-            and manage vendor orders and credits. Adept at designing and
-            implementing end-to-end solutions using the MERN stack (MongoDB,
-            Express.js, Next.js, Node.js), with a strong focus on performance,
-            usability, and maintainability. Experienced in GraphQL, database
-            optimization, and API development. Recognized for problem-solving
-            skills, attention to detail, and a collaborative approach to
-            software development. Known for improving code efficiency, mentoring
-            team members, and troubleshooting complex issues. Passionate about
-            building user-friendly applications that drive business success.
-            Want to know more? Download my resume!
+            and manage vendor orders and credits. Skilled in MongoDB,
+            Express.js, Next.js, and Node.js, with a focus on performance and
+            usability.
           </p>
           <a
-            className="border p-2 rounded-md ml-44 mt-4 w-fit bg-purple-500 hover:bg-purple-700"
-            download={"BrendanKerseyResume.pdf"}
+            className="border p-2 rounded-md mt-4 inline-block bg-purple-500 hover:bg-purple-700 transition"
+            download="BrendanKerseyResume.pdf"
             href="/portfoliov2/BrendanKerseyResume.pdf"
           >
             Download Resume
           </a>
         </div>
-        <div className="flex w-1/2 flex-col" id="skills">
-          <h2 className="text-4xl text-purple-500">Skills:</h2>
-          <ul className="list-disc">
+
+        {/* Skills Section */}
+        <div className="lg:w-1/2" id="skills">
+          <h2 className="text-3xl md:text-4xl text-purple-500">Skills:</h2>
+          <ul className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4 text-lg">
             <li>HTML</li>
             <li>CSS</li>
-            <li>Javascript</li>
+            <li>JavaScript</li>
             <li>React</li>
             <li>Next.js</li>
             <li>MongoDB</li>
@@ -92,28 +102,37 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      <div className="flex justify-center ml-24 flex-col" id="projects">
-        <h2 className="text-purple-500 mt-20 text-4xl">Projects:</h2>
-        <div className="flex space-x-4">
+
+      {/* Projects Section */}
+      <div className="mt-24 px-6 lg:px-24" id="projects">
+        <h2 className="text-purple-500 text-3xl md:text-4xl">Projects:</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
           {projects.map((project, i) => (
-            <div key={project.name}>
+            <div
+              key={project.name}
+              className="bg-gray-800 p-4 rounded-md shadow-md text-center"
+            >
               <img
                 src={`/portfoliov2/${i}.png`}
                 alt={project.name}
-                className="img-thumbnail mx-1"
-                key={i}
-                width={256}
-                height={256}
+                className="w-full h-40 object-cover rounded-md"
               />
-              <h2>
-                <a href={project.link}>{project.name}</a>
+              <h2 className="mt-2 text-lg">
+                <a
+                  href={project.link}
+                  className="text-blue-400 hover:underline"
+                >
+                  {project.name}
+                </a>
               </h2>
             </div>
           ))}
         </div>
       </div>
-      <div id="contact">
-        <h2 className="text-purple-500 mt-20 text-4xl ml-24">Contact Me:</h2>
+
+      {/* Contact Section */}
+      <div className="mt-24 px-6 lg:px-24" id="contact">
+        <h2 className="text-purple-500 text-3xl md:text-4xl">Contact Me:</h2>
         <Contact />
       </div>
     </div>
