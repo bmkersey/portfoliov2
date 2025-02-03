@@ -94,7 +94,7 @@ export default function Home() {
           {projects.map((project, i) => (
             <div key={project.name}>
               <img
-                src={`/${i}.png`}
+                src={`/nextjs-github-pages/${i}.png`}
                 alt={project.name}
                 className="img-thumbnail mx-1"
                 key={i}
