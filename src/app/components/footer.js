@@ -11,7 +11,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           className="hover:text-blue-500 transition"
         >
-          <Image src="/portfoliov2/linkedinincon.svg" />
+          <Image src="/portfoliov2/linkedinicon.svg" />
         </a>
 
         {/* GitHub */}
@@ -21,7 +21,7 @@ export default function Footer() {
           rel="noopener noreferrer"
           className="hover:text-gray-400 transition"
         >
-          <Image src={"/portfoliov2/githubicon.svg"} />
+          <Image src="/portfoliov2/githubicon.svg" />
         </a>
       </div>
       <p className="text-center text-sm text-gray-400 mt-2">
