@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="flex justify-center items-center space-x-6">
         {/* LinkedIn */}
         <a
-          href="https://www.linkedin.com/in/bmkersey"
+          href="https://www.linkedin.com/in/brendankersey"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-blue-500 transition"
