@@ -34,9 +34,9 @@ export default function Home() {
   ];
 
   return (
-    <div className="">
+    <div>
       <Navigation />
-      <div className="flex flex-row justify-center space-x-72">
+      <div id="home" className="flex flex-row justify-center space-x-72">
         <div>
           <h2 className="mt-48 text-purple-500 text-5xl">
             &lt;Brendan
@@ -47,7 +47,7 @@ export default function Home() {
         <Image src={avatar} alt="Brendan's Avatar" height={400} width={400} />
       </div>
       <div className="mt-36 ml-24 flex justify-around">
-        <div className="flex flex-col w-1/3">
+        <div className="flex flex-col w-1/3" id="about">
           <h2 className="text-4xl text-purple-500">About:</h2>
           <p className="">
             Hello! My name is Brendan and I am a full stack developer. I have 3
@@ -69,7 +69,7 @@ export default function Home() {
             Download Resume
           </button>
         </div>
-        <div className="flex w-1/3 flex-col">
+        <div className="flex w-1/3 flex-col" id="skills">
           <h2 className="text-4xl text-purple-500">Skills:</h2>
           <ul className="list-disc">
             <li>HTML</li>
@@ -88,7 +88,7 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      <div className="flex justify-center ml-24 flex-col">
+      <div className="flex justify-center ml-24 flex-col" id="projects">
         <h2 className="text-purple-500 mt-20 text-4xl">Projects:</h2>
         <div className="flex space-x-4">
           {projects.map((project, i) => (
@@ -108,7 +108,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div>
+      <div id="contact">
         <h2 className="text-purple-500 mt-20 text-4xl ml-24">Contact Me:</h2>
         <Contact />
       </div>
