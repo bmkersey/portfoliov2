@@ -85,7 +85,7 @@ export default function Home() {
         {/* Skills Section */}
         <div className="lg:w-1/2" id="skills">
           <h2 className="text-3xl md:text-4xl text-purple-500">Skills:</h2>
-          <ul className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4 text-lg">
+          <ul className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4 text-lg list-disc">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
