@@ -34,7 +34,7 @@ export default function Home() {
   ];
 
   return (
-    <div>
+    <div className="text-white">
       <Navigation />
       <div id="home" className="flex flex-row justify-center space-x-72">
         <div>
