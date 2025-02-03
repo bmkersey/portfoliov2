@@ -65,9 +65,12 @@ export default function Home() {
             building user-friendly applications that drive business success.
             Want to know more? Download my resume!
           </p>
-          <button className="border p-2 rounded-md ml-44 mt-4 w-fit bg-purple-500 hover:bg-purple-700">
+          <a
+            className="border p-2 rounded-md ml-44 mt-4 w-fit bg-purple-500 hover:bg-purple-700"
+            href="/portfoliov2/BrendanKerseyResume.pdf"
+          >
             Download Resume
-          </button>
+          </a>
         </div>
         <div className="flex w-1/3 flex-col" id="skills">
           <h2 className="text-4xl text-purple-500">Skills:</h2>
