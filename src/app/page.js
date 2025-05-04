@@ -66,13 +66,7 @@ export default function Home() {
         <div className="lg:w-1/2" id="about">
           <h2 className="text-3xl md:text-4xl text-purple-500">About:</h2>
           <p className="mt-4 text-base md:text-lg">
-            Hello! My name is Brendan and I am a full stack developer with 3
-            years of experience building scalable web applications. Recently, I
-            developed a company portal for a national organization, enabling
-            users to generate sales reports, request administrative services,
-            and manage vendor orders and credits. Skilled in MongoDB,
-            Express.js, Next.js, and Node.js, with a focus on performance and
-            usability.
+          Hi, I’m Brendan Kersey — a full stack developer passionate about building performant, user-focused web applications. I bring over three years of experience creating scalable tools using JavaScript, Go, and Python, with a strong focus on backend architecture and API design. I’ve developed internal portals for national organizations, collaborated on open-source projects, and built SaaS tools using technologies like Next.js, Node.js, and PostgreSQL. Whether writing backend services in Go or crafting interactive UIs with React, I care deeply about clean code, thoughtful UX, and solving real-world problems with efficiency and clarity.
           </p>
           <a
             className="border p-2 rounded-md mt-4 inline-block bg-purple-500 hover:bg-purple-700 transition"
