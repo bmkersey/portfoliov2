@@ -13,24 +13,24 @@ export default function Home() {
       link: "https://github.com/bmkersey/company-portal",
     },
     {
-      name: "reCOMmend",
-      link: "https://github.com/fpierreRun/reCOMmend",
+      name: "Go-SaaSy",
+      link: "https://github.com/bmkersey/Go-SaaSy",
     },
     {
-      name: "Cloud Encounter",
-      link: "https://benhuf.github.io/encounter-gen/",
+      name: "Auto ReadMe",
+      link: "https://github.com/bmkersey/Auto-Readme",
     },
     {
-      name: "Tech Blog",
-      link: "https://github.com/bmkersey/tech-blog",
+      name: "Book Bot",
+      link: "https://github.com/bmkersey/bookbot",
     },
     {
-      name: "Oh Snap",
-      link: "https://bmkersey.github.io/photo-port/",
+      name: "Go Pokedex CLI",
+      link: "https://github.com/bmkersey/go-pokedex-cli",
     },
     {
-      name: "MyRorschach",
-      link: "https://github.com/BenHuf/my-rorschach",
+      name: "Pokemon Scraper",
+      link: "https://github.com/bmkersey/pokemon-scraper",
     },
   ];
 
@@ -89,6 +89,7 @@ export default function Home() {
           <ul className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-4 text-lg list-disc">
             <li>HTML</li>
             <li>CSS</li>
+            <li>Go Lang</li>
             <li>JavaScript</li>
             <li>React</li>
             <li>Next.js</li>
